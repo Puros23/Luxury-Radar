@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luxury Radar — productos extraordinarios disponibles online</title>
+  <meta name="description" content="Selección editorial de productos extraordinarios, exclusivos, raros y de alto valor disponibles online.">
+  <meta name="theme-color" content="#090b10">
+  <style>
+    :root{--bg:#090b10;--panel:#11141b;--muted:#9aa3b2;--text:#f6f7fb;--line:#242936;--gold:#d8b56a;--gold2:#f2d792;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 20% -10%,#1a1f2a 0,transparent 36%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    header{position:sticky;top:0;z-index:5;background:rgba(9,11,16,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:20px;font-size:.92rem;color:#c8ced8}.navlinks a{text-decoration:none}
+    .hero{padding:110px 0 76px}.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:700}
+    h1{font-size:clamp(3rem,8vw,6.6rem);line-height:.96;letter-spacing:-.055em;margin:.22em 0 .3em;max-width:980px}
+    .lead{font-size:clamp(1.08rem,2.2vw,1.4rem);color:#c4cad4;max-width:760px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;text-decoration:none;border:1px solid var(--line);padding:13px 18px;border-radius:999px;font-weight:700}.btn.primary{background:var(--gold);color:#17130b;border-color:var(--gold)}
+    section{padding:64px 0}.section-title{font-size:clamp(2rem,4vw,3.25rem);margin:0 0 12px;letter-spacing:-.035em}.section-copy{color:var(--muted);max-width:760px;margin:0 0 30px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:24px;min-height:180px}.card .icon{font-size:1.8rem}.card h3{margin:.7rem 0 .4rem}.card p{color:var(--muted);margin:0}
+    .method{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:steps}.step{counter-increment:steps;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.step:before{content:"0" counter(steps);display:block;color:var(--gold);font-weight:800;margin-bottom:16px}
+    .notice{border:1px solid rgba(216,181,106,.35);background:rgba(216,181,106,.07);border-radius:20px;padding:26px}
+    footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8f97a6;font-size:.9rem}.fine{font-size:.86rem;color:#8e96a5}
+    @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}.method{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+    @media(max-width:560px){.grid,.method{grid-template-columns:1fr}.hero{padding-top:72px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav><div class="brand">LUXURY <span>RADAR</span></div><div class="navlinks"><a href="#categorias">Categorías</a><a href="#metodologia">Metodología</a><a href="#transparencia">Transparencia</a></div></nav></div></header>
+<main>
+  <section class="hero"><div class="wrap">
+    <div class="eyebrow">Selección editorial independiente</div>
+    <h1>Lo extraordinario, encontrado y verificado.</h1>
+    <p class="lead">Luxury Radar descubre, selecciona y compara productos exclusivos, raros, extravagantes y de alto valor realmente disponibles online. Priorizamos calidad frente a cantidad y revisión editorial antes de publicar.</p>
+    <div class="actions"><a class="btn primary" href="#metodologia">Cómo seleccionamos</a><a class="btn" href="#categorias">Explorar categorías</a></div>
+  </div></section>
+
+  <section id="categorias"><div class="wrap">
+    <h2 class="section-title">Un radar para lo excepcional.</h2>
+    <p class="section-copy">Buscamos piezas que destaquen por precio, rareza, diseño, tecnología, historia o singularidad. La plataforma está en fase de preparación de catálogo.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">⌚</div><h3>Relojes y joyería</h3><p>Piezas de alta gama, ediciones limitadas, alta joyería y coleccionismo.</p></article>
+      <article class="card"><div class="icon">🖼️</div><h3>Arte y rarezas</h3><p>Obras, objetos de colección y hallazgos difíciles de encontrar.</p></article>
+      <article class="card"><div class="icon">⚙️</div><h3>Tecnología y audio</h3><p>Equipos extremos, innovaciones y productos fuera de lo común.</p></article>
+      <article class="card"><div class="icon">🛋️</div><h3>Mobiliario y diseño</h3><p>Piezas de autor, decoración singular y objetos excepcionales para el hogar.</p></article>
+      <article class="card"><div class="icon">🏎️</div><h3>Vehículos</h3><p>Automóviles, vehículos especiales y propuestas de colección.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>Extravagancias</h3><p>Todo lo que no encaja en una categoría convencional, pero merece ser visto.</p></article>
+    </div>
+  </div></section>
+
+  <section id="metodologia"><div class="wrap">
+    <h2 class="section-title">Selección antes que volumen.</h2>
+    <p class="section-copy">El objetivo no es publicar miles de productos. Es encontrar pocos hallazgos realmente memorables y dejar trazabilidad de cómo fueron incorporados.</p>
+    <div class="method">
+      <div class="step"><strong>Descubrimiento</strong><p class="fine">Localizamos productos en fuentes y comercios compatibles con nuestro proceso.</p></div>
+      <div class="step"><strong>Validación</strong><p class="fine">Revisamos identidad, URL, disponibilidad, precio y fecha de observación.</p></div>
+      <div class="step"><strong>Revisión editorial</strong><p class="fine">Nada entra en el ranking automáticamente: cada candidato debe ser aprobado.</p></div>
+      <div class="step"><strong>Seguimiento</strong><p class="fine">Registramos cambios de precio, posiciones, entradas, salidas y nuevos récords.</p></div>
+    </div>
+  </div></section>
+
+  <section id="transparencia"><div class="wrap"><div class="notice">
+    <h2 class="section-title">Transparencia</h2>
+    <p>Luxury Radar está actualmente en fase de lanzamiento. No mostramos precios ni disponibilidad ficticios. Cuando existan enlaces de afiliación, se identificarán de forma transparente. Una relación de afiliación no determinará por sí sola qué productos aparecen ni su posición editorial.</p>
+  </div></div></section>
+</main>
+<footer><div class="wrap"><strong>Luxury Radar</strong><br>Selección editorial de productos extraordinarios disponibles online.<br><br><span class="fine">Sitio en fase de lanzamiento. La información comercial se verificará antes de su publicación.</span></div></footer>
+</body>
+</html>
